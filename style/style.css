@@ -1,0 +1,600 @@
+body {
+    color: #fff;
+    background-color: #fff;
+    color: #000;
+    margin: auto;
+    margin-top: 3%;
+}
+
+nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    justify-content: space-between;
+    display: flex;
+}
+.logo {
+    cursor: pointer;
+    margin-top: 4%;
+    margin-left: 5%;
+}
+button {
+    border: 2px solid #00fef0;
+    border-radius: 25px;
+    color: #000;
+    background-color: #fff;
+    width: 10em;
+    height: 4em;
+    cursor: pointer;
+    margin-top: 3%;
+    margin-right: 5%;
+}
+button:hover {
+    color: #000;
+    cursor: pointer;
+    background-color: #25d366;
+    border: none;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+button a {
+    color: #000;
+    text-decoration: none;
+}
+
+
+
+.w {
+    color: #00fef0;
+}
+.profile {
+    display: grid;
+    position: absolute;
+    display: none;
+    grid-template-columns: 40% 60%;
+    margin-top: -5%;
+    margin-left: 25%;
+    background-color: linear-gradient(#FF0000, #FFFF00, #00FF00);
+    width: 12%;
+    height: 10%;
+}
+.img {
+    padding-left: 20%;
+    background-color: #808080;
+}
+.ceo {
+    display: grid;
+    background-color: #808080;
+    
+}
+.ceo-of {
+    font-size: 0.75em;    
+}
+
+
+
+
+
+.text {
+    margin-top: 10%;
+    margin-bottom: 5%;
+    text-align: center;
+    border: 1px solid #fff;
+    font-size: 5vmin;
+}
+.word-color {
+    color: #00fef0;
+}
+.animate {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-left: 45%;
+}
+.animate::before,
+.animate::after{
+    content: "";
+    position: absolute;
+    border-radius: inherit;
+}
+.animate::before {
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(0deg, #ff00cc 0%, #333399 100%);
+    animation: spin .5s infinite linear;
+}
+.animate::after{
+    width: 85%;
+    height: 85%;
+    background-color: #000;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+@keyframes spin{
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+
+.showcase{
+    padding-left: 10%;
+    margin: 0;
+    margin-left: 5%;
+    
+}
+  
+
+.semi-footer {
+    display: grid;
+    grid-template-rows: 30% 50%;
+    color: #fff;
+    background-color: #4169e1;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 0em;
+}
+.hi {
+    font-size: 1.25em;
+    padding-bottom: 0px;
+}
+.info {
+    font-size: 1.25em;
+}
+
+
+
+.blankp {
+    height: 12.5em;
+    background-color: #4169e1;
+    width: 100%;
+
+}
+
+
+
+.brief {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-gap: 2%;
+    position: absolute;
+    margin-top: -9.5em;
+    margin-left: 10%;
+    height: 20em;
+    padding-left: 5%;
+    width: 80%;
+}
+.project {
+    border-radius: 15px;
+    background-color: #fff;
+    text-align: center;
+    width: 100%;
+    padding: 5% 1%;
+}
+.project:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    border: none;
+}
+.project h3 {
+    font-size: 1.9em;
+}
+.project p {
+    margin-top: -5%;
+    font-size: 1.3em;
+}
+.collaboration {
+    position: absolute;
+    height: 8em;
+    margin-top: -1em;
+    margin-left: -7em;
+}
+.digital {
+    border-radius: 15px;
+    background-color: #fff;
+    text-align: center;
+    width: 100%;
+    background-color: #05386B;
+    color: #fff;
+    padding: 5% 1%;
+    @media print {
+        color: #000;
+    }
+}
+.digital:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    border: none;
+}
+.digital h3 {
+    font-size: 1.9em;
+}
+.digital p {
+    margin-top: -5%;
+    font-size: 1.3em;
+}
+.businessonline {
+    position: absolute;
+    height: 6em;
+    margin-top: 1em;
+    margin-left: -4.5em;
+}
+.pricing {
+    border-radius: 15px;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    background-color: #5CDB95;
+    padding: 5% 1%;
+}
+.pricing:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    border: none;
+}
+.pricing h3 {
+    font-size: 1.9em;
+}
+.pricing p {
+    margin-top: -5%;
+    font-size: 1.3em;
+}
+.pricingpic {
+    position: absolute;
+    height: 5em;
+    margin-top: 1em;
+    margin-left: -4.5em;
+}
+
+
+
+
+
+
+.blanksecondp {
+    width: 100%;
+    height: 13em;
+    background-color: #fff;
+}
+
+
+
+
+footer {
+    height: 16em;
+    background-color: #000;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    align-items: center;
+    color: #fff;
+    padding-top: 2em;
+    width: auto;
+}
+i {
+    margin-right: 1em;
+    cursor: pointer;
+}
+.facebook {
+    color: #fff;
+}
+.facebook:hover {
+    color: #3b5998;
+}
+.instagram {
+    color: #fff;
+}
+.instagram:hover {
+    color: #8a3ab9;
+}
+.twitter {
+    color: #fff;
+}
+.twitter:hover {
+    color: #00acee;
+}
+.pinterest {
+    color: #fff;
+}
+.pinterest:hover {
+    color: #E60023;
+}
+.linked {
+    color: #fff;
+}
+.linked:hover {
+    color: #0072b1;
+}
+.copyright {
+    color: #fff;
+}
+
+
+
+
+
+
+
+@media only screen and (max-width: 480px) and (min-width: 312px) {
+    body {
+        margin-top: 7%;
+        width: 100%;
+    }
+    
+    nav {
+        padding-left: 8%;
+        padding-right: 5%;
+        height: 1.4em;
+        font-size: 2.2em;
+        width: 80%;
+        }
+    
+    .logo {
+        font-size: 0.7em;
+        margin-left: 35%;
+        margin-top: 8%;
+    }
+    
+    button {
+        display: none;
+        width: 10em;
+        height: 4em;
+        margin-top: -3%;
+    }
+    
+    .profile {
+        display: none;
+    }
+    
+    
+    .animate {
+        margin-left: 40%;
+        width: 100px;
+        height: 100px;
+
+    }
+    
+    
+    
+    .semi-footer {
+        width: 100%;
+    }
+    
+    .info {
+        margin: auto 7%;
+    }
+    
+    
+    .blankp {
+        height: 15em;
+        width: 100%;
+    }
+    
+    .brief {
+        position: absolute;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-gap: 12%;
+        width: 70%;
+        height: 15em;
+        margin-top: -11em;
+        margin-left: 11%;
+        margin-right: auto;
+    }
+    
+    .project {
+        width: 100%;
+        height: 23em;
+        padding: 0px;
+        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+        border: none;
+    }
+    .collaboration {
+        height: 7em;
+        margin-top: 1em;
+        margin-left: -6.5em;
+    }
+        
+    .digital {
+        width: 100%;
+        height: 20em;
+        padding: 0px;
+        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+        border: none;
+    }
+    .businessonline {
+        height: 5em;
+        margin-top: 2em;
+        margin-left: -5em;
+    }
+    
+    .pricing {
+        width: 100%;
+        height: 20em;
+        padding: 0px;
+        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+        border: none;
+    }
+    .pricingpic {
+        height: 5em;
+        margin-top: 1em;
+        margin-left: -4.5em;
+    }
+    
+    .blanksecondp {
+        width: 100%;
+        height: 45em;
+    }
+    
+    footer {
+        padding-top: 15em;
+        width: 100%;
+    }
+}
+
+
+
+
+@media only screen and (max-width: 768px) and (min-width: 481px) {
+    .animate {
+        margin-left: 40%;
+    } 
+    
+    
+    .semi-footer {
+        width: 100%;
+    }
+    
+    .info {
+        margin: auto 7%;
+    }
+    
+    
+    .blankp {
+        height: 15em;
+        width: 100%;
+    }
+    
+    .brief {
+        position: absolute;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-gap: 12%;
+        width: 70%;
+        height: 15em;
+        margin-top: -11em;
+        margin-left: 11%;
+        margin-right: auto;
+    }
+    
+    .project {
+        width: 100%;
+        height: 23em;
+        padding: 0px;
+        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+        border: none;
+    }
+    .collaboration {
+        height: 7em;
+        margin-top: 1em;
+        margin-left: -6.5em;
+    }
+        
+    .digital {
+        width: 100%;
+        height: 20em;
+        padding: 0px;
+        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+        border: none;
+    }
+    .businessonline {
+        height: 5em;
+        margin-top: 2em;
+        margin-left: -5em;
+    }
+    
+    .pricing {
+        width: 100%;
+        height: 20em;
+        padding: 0px;
+        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+        border: none;
+    }
+    .pricingpic {
+        height: 5em;
+        margin-top: 1em;
+        margin-left: -4.5em;
+    }
+    
+    .blanksecondp {
+        width: 100%;
+        height: 45em;
+    }
+    
+    footer {
+        padding-top: 15em;
+        width: 100%;
+    }
+}
+
+
+
+@media only screen and (max-width: 1024px) and (min-width: 769px) {
+    .brief {
+        position: absolute;
+        display: grid;
+        grid-template-columns: 40% 40% 40%;
+        grid-gap: 5%;
+        width: 70%;
+        height: 15em;
+        margin-top: -11em;
+        margin-left: 0;
+        margin-right: auto;
+    }
+    
+    .project {
+        width: 100%;
+        height: 20em;
+        padding: 0px;
+        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+        border: none;
+    }
+    .collaboration {
+        height: 7em;
+        margin-top: -1em;
+        margin-left: -6.5em;
+    }
+        
+    .digital {
+        width: 100%;
+        height: 20em;
+        padding: 0px;
+        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+        border: none;
+    }
+    .businessonline {
+        height: 5em;
+        margin-top: 2em;
+        margin-left: -5em;
+    }
+    
+    .pricing {
+        width: 100%;
+        height: 20em;
+        padding: 0px;
+        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+        border: none;
+    }
+    .pricingpic {
+        height: 5em;
+        margin-top: 1em;
+        margin-left: -4.5em;
+    }
+    
+    footer {
+        width: 100%;
+    }
+}
+
+
+
+@media only screen and (max-width: 1200px) and (min-width: 1025px) {
+    
+}
+
+
+
+@media only screen and (min-width: 1201px) {
+    
+}
+
+
+
+
+
+
+
+
